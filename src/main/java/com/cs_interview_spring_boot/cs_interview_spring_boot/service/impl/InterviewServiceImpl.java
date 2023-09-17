@@ -51,4 +51,21 @@ public class InterviewServiceImpl implements InterviewService {
         return mapToDto(interview);
     }
 
+    @Override
+    public InterviewDto updateInterview(Integer id, InterviewDto interviewDto) {
+        Interview interview = interviewRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Interview","id",id));
+        interview.setSubject(interviewDto.getSubject());
+        interview.setQuestion(interviewDto.getQuestion());
+        interview.setAnswer(interviewDto.getAnswer());
+        interview.setKeyword(interviewDto.getKeyword());
+        Interview updatedInterview = interviewRepository.save(interview);
+        return mapToDto(updatedInterview);
+    }
+
+    @Override
+    public void deleteInterviewById(Integer id) {
+        Interview interview = interviewRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Interview","id",id));
+        interviewRepository.delete(interview);
+    }
+
 }

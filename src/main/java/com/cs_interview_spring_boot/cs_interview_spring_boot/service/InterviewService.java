@@ -7,6 +7,8 @@ import java.util.List;
 public interface InterviewService {
     InterviewDto createInterview(InterviewDto interviewDto);
     List<InterviewDto> getAllInterview();
-
     InterviewDto getInterviewById(Integer id);
+    InterviewDto updateInterview(Integer id, InterviewDto interviewDto);
+
+    void deleteInterviewById(Integer id);
 }

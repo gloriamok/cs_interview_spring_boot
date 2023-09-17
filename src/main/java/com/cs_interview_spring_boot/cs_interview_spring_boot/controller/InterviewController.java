@@ -33,4 +33,16 @@ public class InterviewController {
     public ResponseEntity<InterviewDto> getInterviewById(@PathVariable Integer id) {
         return ResponseEntity.ok(interviewService.getInterviewById(id));
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<InterviewDto> updateInterview(@PathVariable Integer id, @RequestBody InterviewDto interviewDto) {
+        return ResponseEntity.ok(interviewService.updateInterview(id, interviewDto));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteInterview(@PathVariable Integer id) {
+        interviewService.deleteInterviewById(id);
+        return ResponseEntity.ok("Interview entity successfully deleted!");
+    }
+
 }
