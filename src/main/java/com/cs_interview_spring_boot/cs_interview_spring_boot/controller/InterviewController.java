@@ -41,8 +41,7 @@ public class InterviewController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteInterview(@PathVariable Integer id) {
-        interviewService.deleteInterviewById(id);
-        return ResponseEntity.ok("Interview entity successfully deleted!");
+        return ResponseEntity.ok(interviewService.deleteInterviewById(id));
     }
 
 }

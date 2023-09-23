@@ -10,5 +10,5 @@ public interface InterviewService {
     InterviewDto getInterviewById(Integer id);
     InterviewDto updateInterview(Integer id, InterviewDto interviewDto);
 
-    void deleteInterviewById(Integer id);
+    String deleteInterviewById(Integer id);
 }

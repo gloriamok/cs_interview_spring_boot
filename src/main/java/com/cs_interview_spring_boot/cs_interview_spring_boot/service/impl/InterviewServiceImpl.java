@@ -63,9 +63,10 @@ public class InterviewServiceImpl implements InterviewService {
     }
 
     @Override
-    public void deleteInterviewById(Integer id) {
+    public String deleteInterviewById(Integer id) {
         Interview interview = interviewRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Interview","id",id));
         interviewRepository.delete(interview);
+        return "Interview entity successfully deleted!";
     }
 
 }
