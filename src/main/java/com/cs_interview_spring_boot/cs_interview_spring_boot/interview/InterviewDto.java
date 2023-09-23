@@ -1,4 +1,4 @@
-package com.cs_interview_spring_boot.cs_interview_spring_boot.payload;
+package com.cs_interview_spring_boot.cs_interview_spring_boot.interview;
 
 import lombok.Data;
 

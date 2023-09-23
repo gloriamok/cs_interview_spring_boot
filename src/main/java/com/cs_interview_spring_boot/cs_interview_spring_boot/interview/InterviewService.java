@@ -1,6 +1,6 @@
-package com.cs_interview_spring_boot.cs_interview_spring_boot.service;
+package com.cs_interview_spring_boot.cs_interview_spring_boot.interview;
 
-import com.cs_interview_spring_boot.cs_interview_spring_boot.payload.InterviewDto;
+import com.cs_interview_spring_boot.cs_interview_spring_boot.interview.InterviewDto;
 
 import java.util.List;
 

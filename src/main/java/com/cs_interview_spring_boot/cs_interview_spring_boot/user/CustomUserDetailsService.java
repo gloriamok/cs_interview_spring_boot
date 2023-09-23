@@ -1,7 +1,7 @@
-package com.cs_interview_spring_boot.cs_interview_spring_boot;
+package com.cs_interview_spring_boot.cs_interview_spring_boot.user;
 
-import com.cs_interview_spring_boot.cs_interview_spring_boot.model.User;
-import com.cs_interview_spring_boot.cs_interview_spring_boot.repository.UserRepository;
+import com.cs_interview_spring_boot.cs_interview_spring_boot.user.User;
+import com.cs_interview_spring_boot.cs_interview_spring_boot.user.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

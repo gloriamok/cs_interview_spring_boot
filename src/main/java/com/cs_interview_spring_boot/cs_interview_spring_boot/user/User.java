@@ -1,4 +1,4 @@
-package com.cs_interview_spring_boot.cs_interview_spring_boot.model;
+package com.cs_interview_spring_boot.cs_interview_spring_boot.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

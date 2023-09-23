@@ -1,10 +1,10 @@
-package com.cs_interview_spring_boot.cs_interview_spring_boot.service.impl;
+package com.cs_interview_spring_boot.cs_interview_spring_boot.interview;
 
 import com.cs_interview_spring_boot.cs_interview_spring_boot.exception.ResourceNotFoundException;
-import com.cs_interview_spring_boot.cs_interview_spring_boot.model.Interview;
-import com.cs_interview_spring_boot.cs_interview_spring_boot.payload.InterviewDto;
-import com.cs_interview_spring_boot.cs_interview_spring_boot.repository.InterviewRepository;
-import com.cs_interview_spring_boot.cs_interview_spring_boot.service.InterviewService;
+import com.cs_interview_spring_boot.cs_interview_spring_boot.interview.Interview;
+import com.cs_interview_spring_boot.cs_interview_spring_boot.interview.InterviewDto;
+import com.cs_interview_spring_boot.cs_interview_spring_boot.interview.InterviewRepository;
+import com.cs_interview_spring_boot.cs_interview_spring_boot.interview.InterviewService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

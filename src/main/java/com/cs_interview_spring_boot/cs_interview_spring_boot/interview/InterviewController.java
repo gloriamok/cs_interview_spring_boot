@@ -1,11 +1,10 @@
-package com.cs_interview_spring_boot.cs_interview_spring_boot.controller;
+package com.cs_interview_spring_boot.cs_interview_spring_boot.interview;
 
-import com.cs_interview_spring_boot.cs_interview_spring_boot.payload.InterviewDto;
-import com.cs_interview_spring_boot.cs_interview_spring_boot.service.InterviewService;
+import com.cs_interview_spring_boot.cs_interview_spring_boot.interview.InterviewDto;
+import com.cs_interview_spring_boot.cs_interview_spring_boot.interview.InterviewService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.function.EntityResponse;
 
 import java.util.List;
 
