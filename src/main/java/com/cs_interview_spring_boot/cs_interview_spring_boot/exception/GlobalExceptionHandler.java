@@ -1,6 +1,5 @@
 package com.cs_interview_spring_boot.cs_interview_spring_boot.exception;
 
-import com.cs_interview_spring_boot.cs_interview_spring_boot.payload.ErrorDetails;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
