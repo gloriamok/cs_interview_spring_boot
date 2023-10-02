@@ -33,6 +33,11 @@ public class InterviewController {
         return ResponseEntity.ok(interviewService.getInterviewById(id));
     }
 
+    @GetMapping("/users/{userId}")
+    public ResponseEntity<List<InterviewDto>> getInterviewsByUserId(@PathVariable Integer userId) {
+        return ResponseEntity.ok(interviewService.getInterviewsByUserId(userId));
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<InterviewDto> updateInterview(@PathVariable Integer id, @RequestBody InterviewDto interviewDto) {
         return ResponseEntity.ok(interviewService.updateInterview(id, interviewDto));

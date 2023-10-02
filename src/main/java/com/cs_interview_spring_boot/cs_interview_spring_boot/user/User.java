@@ -1,10 +1,13 @@
 package com.cs_interview_spring_boot.cs_interview_spring_boot.user;
 
+import com.cs_interview_spring_boot.cs_interview_spring_boot.interview.Interview;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.Set;
 
 @Getter
 @Setter
@@ -24,4 +27,7 @@ public class User {
     private String email;
     @Column(nullable = false)
     private String password;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Interview> interviewSet;
 }

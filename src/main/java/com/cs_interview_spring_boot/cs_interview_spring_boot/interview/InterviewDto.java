@@ -9,4 +9,5 @@ public class InterviewDto {
     private String question;
     private String answer;
     private String keyword;
+    private Integer userId;
 }
