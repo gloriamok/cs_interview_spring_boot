@@ -22,6 +22,7 @@ public class AuthController {
         return ResponseEntity.ok(authService.login(loginDto));
     }
 
+    // TODO: Add Validation to Register
     @PostMapping(value = {"/register","/signup"})
     public ResponseEntity<String> register(@RequestBody RegisterDto registerDto) {
         return new ResponseEntity<>(authService.register(registerDto), HttpStatus.CREATED);
